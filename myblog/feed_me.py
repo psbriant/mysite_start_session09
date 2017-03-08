@@ -1,6 +1,6 @@
 from django.contrib.syndication.views import Feed
 from django.urls import reverse
-from mymodel.models import Post
+from myblog.models import Post
 
 class LatestEntriesFeed(Feed):
     title = "Blog Posts"
