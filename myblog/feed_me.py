@@ -3,9 +3,9 @@ from django.urls import reverse
 from mymodel.models import Post
 
 class LatestEntriesFeed(Feed):
-    title = "Police beat site news"
-    link = "/sitenews/"
-    description = "Updates on changes and additions to police beat central."
+    title = "Blog Posts"
+    link = "/feedme/"
+    description = "Feeds the blog all the newses."
 
     def items(self):
         return Post.objects.order_by('-published_date')[:5]
